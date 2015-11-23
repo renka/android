@@ -29,12 +29,5 @@
         sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
         <dex dex="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.1-f0f6673fef02ccf659fbb87fe3860f9faee148d4.jar" />
     </item>
-    <item
-        jar="/home/isaturina/AndroidStudioProjects/android/app/libs/android-support-v13.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ecda966839090a41b29a9239d44bafc06fdadb87">
-        <dex dex="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/pre-dexed/debug/android-support-v13-bd61d3521129df6243fba08eb84e348ef714ed43.jar" />
-    </item>
 
 </items>

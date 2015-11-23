@@ -60,7 +60,10 @@ public class ArticleFragment extends Fragment {
     }
 
     public void updateArticleView(int position) {
-        TextView article = (TextView) getActivity().findViewById(R.id.article);
+        TextView article = (TextView) getActivity().findViewById(R.id.article_fragment);
+        if(article == null) {
+            article = (TextView) getActivity().findViewById(R.id.article);
+        }
         article.setText(Ipsum.Articles[position]);
         mCurrentPosition = position;
     }
