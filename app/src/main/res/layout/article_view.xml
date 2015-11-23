@@ -15,6 +15,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 
-<resources>
-    <string name="app_name">Fragment Basics</string>
-</resources>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/article"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textSize="18sp" />
