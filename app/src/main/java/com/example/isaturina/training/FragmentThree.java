@@ -1,6 +1,8 @@
 package com.example.isaturina.training;
 
 import android.app.Fragment;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,8 +24,14 @@ public class FragmentThree extends Fragment{
     }
 
     public void setText(String colorValue) {
+        SharedPreferences sharedPref = getActivity().getPreferences(Context.MODE_PRIVATE);
+        String prev = sharedPref.getString("prev_color", "no_prev");
         if(textView != null){
-            textView.setText(colorValue);
+            textView.setText("Now: " + colorValue + ", was: " + prev);
         }
+        SharedPreferences.Editor editor = sharedPref.edit();
+        editor.putString("prev_color", colorValue);
+        editor.commit();
+
     }
 }
