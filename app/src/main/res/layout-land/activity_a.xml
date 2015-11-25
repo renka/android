@@ -3,21 +3,21 @@
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:orientation="vertical"
+android:orientation="horizontal"
 tools:context="ccom.example.isaturina.training.ActivityA" >
 
 <fragment
     android:id="@+id/fragment_one"
     android:name="com.example.isaturina.training.FragmentOne"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
     android:layout_weight="1" />
 
 <fragment
     android:id="@+id/fragment_two"
     android:name="com.example.isaturina.training.FragmentTwo"
-    android:layout_width="match_parent"
-    android:layout_height="0dp"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
     android:layout_weight="1" />
 
 </LinearLayout>
