@@ -113,7 +113,7 @@ public class ActivityA extends AppCompatActivity {
 
                 Intent intent = new Intent(this, ActivityB.class);
 
-                intent.putExtra(EXTRA_MESSAGE, number);
+                    intent.putExtra(EXTRA_MESSAGE, number);
                 startActivity(intent);
 
             }

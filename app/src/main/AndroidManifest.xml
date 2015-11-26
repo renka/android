@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityB" >
+            <action android:name="android.intent.action.SEND"/>
+            <category android:name="android.intent.category.DEFAULT"/>
         </activity>
     </application>
 
