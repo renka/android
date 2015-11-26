@@ -5,6 +5,7 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 
 import java.util.List;
@@ -51,6 +52,26 @@ public class ActivityA extends AppCompatActivity {
             startActivity(webIntent);
         }
 
+    }
+
+    public void methodD(View view) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("text/html");
+        intent.putExtra(android.content.Intent.EXTRA_TEXT, Html.fromHtml("<p>This is the text that will be shared.</p>"));
+        startActivity(Intent.createChooser(intent,"Share using"));
+// Create intent to show chooser
+        Intent chooser = Intent.createChooser(intent, "Test");
+
+        PackageManager packageManager = getPackageManager();
+
+        List activities = packageManager.queryIntentActivities(intent,
+                PackageManager.MATCH_DEFAULT_ONLY);
+
+        boolean isIntentSafe = activities.size() > 0;
+// Verify the intent will resolve to at least one activity
+       // if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(chooser);
+       // }
     }
 
 }
