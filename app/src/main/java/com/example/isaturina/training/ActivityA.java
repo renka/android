@@ -22,8 +22,8 @@ public class ActivityA extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
+    protected void onDestroy() {
+        super.onDestroy();
         if(mediaPlayer != null) {
             mediaPlayer.release();
             mediaPlayer = null;
@@ -31,12 +31,37 @@ public class ActivityA extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart() {
+        super.onRestart();
+        if(mediaPlayer != null) {
+            mediaPlayer.start();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        if(mediaPlayer != null) {
+            mediaPlayer.pause();
+        }
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
-        Button play = (Button) findViewById(R.id.play);
-        play.setClickable(true);
-        Button stop = (Button) findViewById(R.id.stop);
-        stop.setClickable(false);
+        if(mediaPlayer != null) {
+            mediaPlayer.start();
+            Button play = (Button) findViewById(R.id.play);
+            play.setClickable(false);
+            Button stop = (Button) findViewById(R.id.stop);
+            stop.setClickable(true);
+        }
+        else {
+            Button play = (Button) findViewById(R.id.play);
+            play.setClickable(true);
+            Button stop = (Button) findViewById(R.id.stop);
+            stop.setClickable(false);
+        }
     }
 
     public void play(View view) {
