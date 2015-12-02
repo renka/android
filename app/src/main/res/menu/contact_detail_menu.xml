@@ -14,13 +14,12 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<resources>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- Define some key view padding values. This is useful because the values can be used in
-         multiple views and changed from one central location. It also gives us the ability to
-         provide alternate values for different device configurations using resource directory
-         qualifiers. -->
-    <dimen name="padding">16dp</dimen>
-    <dimen name="listview_item_padding">16dp</dimen>
+    <item
+            android:id="@+id/menu_edit_contact"
+            android:title="@string/menu_edit_contact"
+            android:icon="@drawable/ic_action_edit"
+            android:showAsAction="ifRoom"/>
 
-</resources>
+</menu>

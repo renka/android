@@ -14,13 +14,13 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 -->
-<resources>
 
-    <!-- Define some key view padding values. This is useful because the values can be used in
-         multiple views and changed from one central location. It also gives us the ability to
-         provide alternate values for different device configurations using resource directory
-         qualifiers. -->
-    <dimen name="padding">16dp</dimen>
-    <dimen name="listview_item_padding">16dp</dimen>
+<!-- Main Activity single pane layout. This layout contains a single ContactsListFragment that
+     displays a list of contacts. Tapping on a contact will start a new activity to display the
+     contact details. -->
 
-</resources>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+          android:name="com.example.isaturina.training.ui.ContactsListFragment"
+          android:id="@+id/contact_list"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"/>

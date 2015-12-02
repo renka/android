@@ -16,11 +16,9 @@
 -->
 <resources>
 
-    <!-- Define some key view padding values. This is useful because the values can be used in
-         multiple views and changed from one central location. It also gives us the ability to
-         provide alternate values for different device configurations using resource directory
-         qualifiers. -->
-    <dimen name="padding">16dp</dimen>
-    <dimen name="listview_item_padding">16dp</dimen>
+    <!-- On devices with much larger screen sizes, such as a 10" tablet like Nexus 10, bump up the
+         common padding value to add some extra white space which makes the layouts feel more
+         suitable for the larger screen. -->
+    <dimen name="padding">32dp</dimen>
 
 </resources>

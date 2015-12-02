@@ -16,11 +16,9 @@
 -->
 <resources>
 
-    <!-- Define some key view padding values. This is useful because the values can be used in
-         multiple views and changed from one central location. It also gives us the ability to
-         provide alternate values for different device configurations using resource directory
-         qualifiers. -->
-    <dimen name="padding">16dp</dimen>
-    <dimen name="listview_item_padding">16dp</dimen>
+    <!-- On devices with a smallest width of 600dp or more, the two-pane layout should allocate
+         a larger portion of the screen to the detail fragment. -->
+    <integer name="contact_list_percent">35</integer>
+    <integer name="contact_detail_percent">65</integer>
 
 </resources>
