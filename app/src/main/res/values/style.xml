@@ -15,6 +15,14 @@
 -->
 
 <resources>
-    <string name="hello">Hello World, NewsReaderActivity!</string>
-    <string name="app_name">NewsReader</string>
+<style name="NewsReaderStyle" parent="android:Theme.Light.NoTitleBar">
+</style>
+
+<style name="NewsReaderStyle_NoActionBar" parent="android:Theme.Light.NoTitleBar">
+</style>
+
+<style name="CategoryButtonStyle" parent="@android:style/Widget.Button">
+    <item name="android:textColor">#ffffff</item>
+</style>
+
 </resources>

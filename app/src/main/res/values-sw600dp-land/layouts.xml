@@ -14,7 +14,9 @@
      limitations under the License.
 -->
 
+<!-- BEGIN_INCLUDE(all) -->
 <resources>
-    <string name="hello">Hello World, NewsReaderActivity!</string>
-    <string name="app_name">NewsReader</string>
+    <item name="main_layout" type="layout">@layout/twopanes</item>
+    <bool name="has_two_panes">true</bool>
 </resources>
+<!-- END_INCLUDE(all) -->

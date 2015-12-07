@@ -14,7 +14,12 @@
      limitations under the License.
 -->
 
-<resources>
-    <string name="hello">Hello World, NewsReaderActivity!</string>
-    <string name="app_name">NewsReader</string>
-</resources>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:drawable="@drawable/button_pressed" />
+    <item android:state_focused="true"
+          android:drawable="@drawable/button_pressed" />
+    <item android:state_selected="true"
+          android:drawable="@drawable/button_pressed" />
+    <item android:drawable="@drawable/button_normal" />
+</selector>
