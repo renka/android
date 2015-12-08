@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Training</string>
+    <string name="action_favorite">Mark Favorite</string>
+    <string name="action_settings">Settings</string>
+    <string name="feedback">Write Feedback</string>
+    <string name="title_activity_child">Child</string>
 </resources>
