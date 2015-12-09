@@ -59,9 +59,10 @@ public class ActivityA extends AppCompatActivity {
                 return true;
 
             case R.id.action_favorite:
-                Snackbar.make(findViewById(R.id.activity_a_lo), R.string.liked,
-                        Snackbar.LENGTH_SHORT)
-                        .show();
+                Snackbar mySnackbar = Snackbar.make(findViewById(R.id.activity_a_lo), R.string.liked,
+                    Snackbar.LENGTH_SHORT);
+                mySnackbar.setAction(R.string.undo_string, new MyUndoListener());
+                mySnackbar.show();
                 return true;
 
             case R.id.feedback:
