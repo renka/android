@@ -6,4 +6,5 @@
     <string name="title_activity_child">Child</string>
     <string name="action_search">Search</string>
     <string name="share">Share</string>
+    <string name="liked">Added to favorites</string>
 </resources>

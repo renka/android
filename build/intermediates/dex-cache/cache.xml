@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/pre-dexed/debug/classes-c3bc0803d6e1b16e2333e4fbec7cf25f149ea7e1.jar" />
+    </item>
+    <item
+        jar="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/isaturina/AndroidStudioProjects/android/app/build/intermediates/pre-dexed/debug/classes-23f5dc3722b90455a83349a363ea646d34a09ab4.jar" />
+    </item>
+
+</items>

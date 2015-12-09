@@ -1,6 +1,7 @@
 package com.example.isaturina.training;
 
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -58,8 +59,9 @@ public class ActivityA extends AppCompatActivity {
                 return true;
 
             case R.id.action_favorite:
-                // User chose the "Favorite" action, mark the current item
-                // as a favorite...
+                Snackbar.make(findViewById(R.id.activity_a_lo), R.string.liked,
+                        Snackbar.LENGTH_SHORT)
+                        .show();
                 return true;
 
             case R.id.feedback:
