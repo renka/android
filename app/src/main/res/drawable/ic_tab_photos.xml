@@ -14,9 +14,9 @@
   limitations under the License.
   -->
 
-<resources>
-    <string name="app_name">Tab Demo</string>
-
-    <string name="tab_photos">Photos</string>
-    <string name="tab_videos">Videos</string>
-</resources>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/ic_tab_photos_selected"
+        android:state_selected="true"
+        android:state_pressed="false" />
+    <item android:drawable="@drawable/ic_tab_photos_unselected" />
+</selector>
