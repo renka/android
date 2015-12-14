@@ -42,6 +42,7 @@ public class MainActivity extends Activity {
         pie.addItem("Daedalus", 3, res.getColor(R.color.bluegrass));
         pie.addItem("Euripides", 1, res.getColor(R.color.turquoise));
         pie.addItem("Ganymede", 3, res.getColor(R.color.slate));
+        pie.addItem("Piu", 3, res.getColor(R.color.my));
 
         ((Button) findViewById(R.id.Reset)).setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
