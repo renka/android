@@ -33,9 +33,9 @@
             custom:labelY="85dp"
             custom:labelPosition="left"
             custom:highlightStrength="1.12"
-            android:background="@android:color/white"
+            android:background="@android:color/holo_blue_light"
             custom:pieRotation="0"
-            custom:labelColor="@android:color/black"
+            custom:labelColor="@android:color/holo_red_light"
             custom:autoCenterPointerInSlice="true"
             custom:pointerRadius="4dp"
             />
